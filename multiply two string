@@ -1,0 +1,29 @@
+//Initial Template for Java
+
+
+import java.util.*;
+import java.math.*;
+class Multiply{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t-->0){
+            String a=sc.next();
+            String b=sc.next();
+            GfG g=new GfG();
+            System.out.println(g.multiply(a,b));
+        }
+    }
+}// } Driver Code Ends
+//User function Template for Java
+
+class GfG{
+    public String multiply(String a,String b){
+        //Your code here.
+        java.math.BigInteger b1 = new BigInteger(a);
+        java.math.BigInteger b2 = new BigInteger(b);
+        java.math.BigInteger res = b1.multiply(b2);
+
+return res.toString();
+    }
+}
